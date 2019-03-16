@@ -16,6 +16,24 @@
       }
     </style>
   </head>
+  <platinim-sw-register
+    auto-register
+    skip-waiting
+    clients-claim
+    reload-on-install
+    href="sw-import.js">
+    <platinum-sw-cache
+      default-cache-strategy="networkFirst">
+    </platinum-sw-cache>
+  </platinim-sw-register>
+  <firebase-app
+    name="notes"
+    api-key="AIzaSyAmwnWBZqtZJttLXopP3ExfJaNl_g8fya4"
+    auth-domain="pga-1-3efec.firebaseapp.com"
+    database-url="https://pga-1-3efec.firebaseio.com">
+  </firebase-app>
+
   <body>
+    <note-app></note-app>
   </body>
 </html>
