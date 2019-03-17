@@ -61,7 +61,7 @@
   		</template>
 	</div>
   </template>
-  <script>
+ <script>
   Polymer({
     is: 'note-app',
 
@@ -77,6 +77,10 @@
 
     toEditableId: function(noteId) {
       return this.notesPath + '/' + noteId;
+    },
+
+    get isEditable() {
+      return this.online;
     }
   });
 </script>
